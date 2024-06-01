@@ -1,0 +1,39 @@
+.horizon
+{
+    height: 50vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+.horizon::before,
+.horizon::after
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+.horizon::before{
+  background: linear-gradient(
+    to bottom, 
+    #26007d 0%,
+    #3503a8 50%,
+    #b30699 74%,
+    #ff179a 84%,
+    #ffff05 100% 
+  );
+  animation: day-view 12s linear infiniti alternate;
+} 
+.horizon::after
+{
+    background: linear-gradient(
+    to bottom, 
+    red 0%,
+    #3503a8 50%,
+    #b30699 74%,
+    greenyellow 84%,
+    #ffff05 100% 
+  );
+  animation: day-view 12s linear infiniti alternate;
+}
